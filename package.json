@@ -1,0 +1,26 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "This is my E-commerce Shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehan Riaz",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "faker": "^6.6.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
