@@ -9,7 +9,7 @@ const productRouter = require("./routes/products")
 const categoryRouter = require("./routes/categories")
 const orderRouter = require("./routes/orders")
 const userRouter = require("./routes/users")
-const fakerRouter = require("./routes/faker")
+const fakeUserRouter = require("./routes/fakeUsers")
 mongoose.connect("mongodb://127.0.0.1:27017/Eshopdbldb");
 mongoose.Promise = global.Promise;
 
@@ -22,7 +22,7 @@ app.use("/product", productRouter)
 app.use("/category", categoryRouter)
 app.use("/order", orderRouter)
 app.use("/user", userRouter)
-app.use("/faker", fakerRouter)
+app.use("/fakeUser", fakeUserRouter)
 
 app.use((req, res, next) => {
     const error = new Error("Not found");
